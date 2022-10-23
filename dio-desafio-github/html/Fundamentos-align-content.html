@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align content</title>
+
+    <style>
+        .container {
+            height: 400px;
+            max-width: 300px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;            
+        }
+
+        .item {
+            background-color:  orangered;
+            padding: 0 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+        }
+        
+        .stretch {
+            align-content: stretch;
+        }
+
+        .center {
+            align-content: center;
+        }
+
+        .flex-start {
+            align-content: flex-start;
+        }
+
+        .flex-end {
+            align-content: flex-end;
+        }
+
+        .space-around {
+            align-content: space-around;
+        }
+
+        .space-between {
+            align-content: space-between;
+        }
+
+        .p {
+            margin: 0 auto;
+            max-width: 300px;
+            height: 30px;
+            font-size: 30px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+        <p class="p">Stretch</p>
+    <div class="container stretch">
+        <div class="item">wuiçfjiweo~jfop~wjeofp~jweop~jwoefp~j </div>
+        <div class="item">nwkofjwiopf jo jwoipf</div>
+        <div class="item">iwjpfikow~jefp~wjkpf~rfgeroip f</div>
+        <div class="item">jsdhpf wosfnioj dsnvo sovhijhnsodfnp wf pjsphiosdphfjnwjscphsiod</div>
+        <div class="item">iwjpfikow~jefp~wjkpf~ jwopmkwjnekfojopj weoip f</div>
+        <div class="item">iwjpfikow~jefp~wjkpf~ jwopmkwjnekfojopj weoip f</div>
+        <div class="item">iwjpfikow~jefp~wjkpf~ jwopmkwjnekfojopj weoip f</div>
+
+    </div>
+
+    <p class="p">Center</p>
+    <div class="container center">
+        <div class="item">wuiçfjiweo~jfop~wjeofp~jweop~jwoefp~j </div>
+        <div class="item">nwkofjwiopf jo jwoipf</div>
+        <div class="item">iwjpfikow~jefp~wjkpf~rfgeroip f</div>
+        <div class="item">jsdhpf wosfnioj dsnvo sovhijhnsodfnp wf pjsphiosdphfjnwjscphsiod</div>
+        <div class="item">iwjpfikow~jefp~wjkpf~ jwopmkwjnekfojopj weoip f</div>
+        <div class="item">iwjpfikow~jefp~wjkpf~ jwopmkwjnekfojopj weoip f</div>
+        <div class="item">iwjpfikow~jefp~wjkpf~ jwopmkwjnekfojopj weoip f</div>
+
+    </div>
+    
+    <p class="p">Flex-Start</p>
+    <div class="container flex-start">
+        <div class="item">wuiçfjiweo~jfop~wjeofp~jweop~jwoefp~j </div>
+        <div class="item">nwkofjwiopf jo jwoipf</div>
+        <div class="item">iwjpfikow~jefp~wjkpf~rfgeroip f</div>
+        <div class="item">jsdhpf wosfnioj dsnvo sovhijhnsodfnp wf pjsphiosdphfjnwjscphsiod</div>
+        <div class="item">iwjpfikow~jefp~wjkpf~ jwopmkwjnekfojopj weoip f</div>
+        <div class="item">iwjpfikow~jefp~wjkpf~ jwopmkwjnekfojopj weoip f</div>
+        <div class="item">iwjpfikow~jefp~wjkpf~ jwopmkwjnekfojopj weoip f</div>
+
+    </div>
+
+    <p class="p">flex-end</p>
+    <div class="container flex-end">
+        <div class="item">wuiçfjiweo~jfop~wjeofp~jweop~jwoefp~j </div>
+        <div class="item">nwkofjwiopf jo jwoipf</div>
+        <div class="item">iwjpfikow~jefp~wjkpf~rfgeroip f</div>
+        <div class="item">jsdhpf wosfnioj dsnvo sovhijhnsodfnp wf pjsphiosdphfjnwjscphsiod</div>
+        <div class="item">iwjpfikow~jefp~wjkpf~ jwopmkwjnekfojopj weoip f</div>
+        <div class="item">iwjpfikow~jefp~wjkpf~ jwopmkwjnekfojopj weoip f</div>
+        <div class="item">iwjpfikow~jefp~wjkpf~ jwopmkwjnekfojopj weoip f</div>
+
+    </div>
+
+    <p class="p">Space around</p>
+    <div class="container stretch space-around">
+        <div class="item">wuiçfjiweo~jfop~wjeofp~jweop~jwoefp~j </div>
+        <div class="item">nwkofjwiopf jo jwoipf</div>
+        <div class="item">iwjpfikow~jefp~wjkpf~rfgeroip f</div>
+        <div class="item">jsdhpf wosfnioj dsnvo sovhijhnsodfnp wf pjsphiosdphfjnwjscphsiod</div>
+        <div class="item">iwjpfikow~jefp~wjkpf~ jwopmkwjnekfojopj weoip f</div>
+        <div class="item">iwjpfikow~jefp~wjkpf~ jwopmkwjnekfojopj weoip f</div>
+        <div class="item">iwjpfikow~jefp~wjkpf~ jwopmkwjnekfojopj weoip f</div>
+
+    </div>
+
+    <p class="p">Space-between</p>
+    <div class="container space-between">
+        <div class="item">wuiçfjiweo~jfop~wjeofp~jweop~jwoefp~j </div>
+        <div class="item">nwkofjwiopf jo jwoipf</div>
+        <div class="item">iwjpfikow~jefp~wjkpf~rfgeroip f</div>
+        <div class="item">jsdhpf wosfnioj dsnvo sovhijhnsodfnp wf pjsphiosdphfjnwjscphsiod</div>
+        <div class="item">iwjpfikow~jefp~wjkpf~ jwopmkwjnekfojopj weoip f</div>
+        <div class="item">iwjpfikow~jefp~wjkpf~ jwopmkwjnekfojopj weoip f</div>
+        <div class="item">iwjpfikow~jefp~wjkpf~ jwopmkwjnekfojopj weoip f</div>
+
+    </div>
+</body>
+</html>

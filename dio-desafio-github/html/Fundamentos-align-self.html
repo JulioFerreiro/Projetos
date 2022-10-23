@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align self</title>
+    <style>
+        .flex-container {
+            max-width: 450px;
+            margin: 0 auto;
+            border: 1px solid black;
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        .align-container {
+            align-items: ceter;
+        }
+
+        .p {
+            text-align: center;
+            width: 500px;
+            font-style: oblique;
+        }
+
+        .direction {
+            flex-direction: column;
+        }
+
+        .item {
+            background-color: blue;
+            font-size: 24px;
+            text-align: center;
+            color: white;
+            /* flex: 1;  */
+            margin: 5px;           
+        }
+
+        .center {
+            align-self: center;
+        }
+
+        .start {
+            align-self: flex-start;
+        }
+
+        .end {
+            align-self: flex-end;
+        }
+
+        .baseline {
+            align-self: baseline;
+        }
+
+        .stretch {
+            align-self: stretch;
+        }
+
+        .auto {
+            align-self: auto;
+        }
+
+
+    </style>
+</head>
+<body> 
+    <h1>ROW</h1>
+    <p class="p">AUTO</p>
+    <div class="flex-container align-container">
+        <div class="item auto">AAA</div>
+        <div class="item auto">111</div>
+        <div class="item auto">Olá mundo, bora aprender a desenvolver hahaha</div>
+        <div class="item auto">ITEM 4</div>
+
+    </div>
+
+    
+    <p class="p">AUTO</p>
+    <div class="flex-container">
+        <div class="item center">AAA</div>
+        <div class="item start">111</div>
+        <div class="item stretch">Olá mundo, bora aprender a desenvolver hahaha</div>
+        <div class="item end">ITEM 4</div>
+
+    </div>
+
+    
+    <p class="p">AUTO</p>
+    <div class="flex-container">
+        <div class="item center">AAA</div>
+        <div class="item start">111AAAAAAAAAAAAAAAAAAAAAAAA</div>
+        <div class="item end">ITEAAAAAAAAAAAAAAAAAAAAAAAM 4</div>
+        <div class="item stretch">Olá mundo, bora aprender a desenvolver hahhahahahahahaaha</div>
+
+    </div>
+
+    <h1>Column</h1>
+
+    <p class="p">AUTO</p>
+    <div class="flex-container align-container direction">
+        <div class="item auto">AAA</div>
+        <div class="item auto">111</div>
+        <div class="item auto">Olá mundo, bora aprender a desenvolver hahaha</div>
+        <div class="item auto">ITEM 4</div>
+
+    </div>
+
+    
+    <p class="p">AUTO</p>
+    <div class="flex-container direction">
+        <div class="item center">AAA</div>
+        <div class="item start">111</div>
+        <div class="item stretch">Olá mundo, bora aprender a desenvolver hahaha</div>
+        <div class="item end">ITEM 4</div>
+
+    </div>
+
+    
+    <p class="p">AUTO</p>
+    <div class="flex-container direction">
+        <div class="item center">AAA</div>
+        <div class="item start">111AAAAAAAAAAAAAAAAAAAAAAAA</div>
+        <div class="item end">ITEAAAAAAAAAAAAAAAAAAAAAAAM 4</div>
+        <div class="item stretch">Olá mundo, bora aprender a desenvolver hahhahahahahahaaha</div>
+
+    </div>
+</body>
+</html>

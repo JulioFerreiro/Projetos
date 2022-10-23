@@ -1,0 +1,6 @@
+git status -visualizar o status
+git commit -m "qual quer coisa"(Para add novos commit github)
+git add * (add novas pastas no pc)
+git push origin master (PARA MANDAR AS AUTERAÇÃOES PARA GITHUB)
+git pull origin master (PARA FAZER UPLOAD DOS REPOSITORIOS DO GITHUB)
+git clone (clonar outros arquivos)
